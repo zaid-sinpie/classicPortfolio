@@ -161,13 +161,12 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    overflow: auto;
     gap: 10px;
 }
 
 .proj, .edu, .skill{    
     width: 90%;
-    height: 20px;
+    height: 20%;
     text-align: center;
     letter-spacing: 8px;
     background: var(--base-secondary);
@@ -175,6 +174,7 @@ body{
     border-radius: 6px;
     color: var(--primary-textColor);
     font-size: smaller;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .education{
@@ -205,3 +205,23 @@ body{
 .hidden{
     display: none;
 }
+
+/* Custom Scroll bar  */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
